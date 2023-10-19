@@ -1,0 +1,289 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Epilogue', sans-serif;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .page1{
+  width: 100%;
+  height: 90vh;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .page1 .left_home{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 70vh;
+  justify-content: space-around;
+  padding: 0px 70px;
+}
+
+.container .page1 .left_home h1{
+  font-size: 60px;
+  text-align: left;
+}
+
+.container .page1 .left_home .text{
+  width: 70%;
+}
+
+.container .page1 .left_home .text p{
+  font-size: 15px;
+  line-height: 23px;
+  color: gray;
+}
+
+.more{
+  width: 150px;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 800;
+  background-color: #fff;
+  transition: .5s;
+}
+
+.more:hover{
+  background-color: rgb(230, 230, 230);
+}
+
+.logo_sponsors{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container .page1 .right_home{
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .right_home img{
+  width: 60%;
+  cursor: pointer;
+}
+
+.mobile{
+  display: none;
+}
+
+.navbar{
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 0px 20px;
+}
+
+.navbar .left_navbar{
+  display: flex;
+  width: 45%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar .left_navbar .logo{
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar .left_navbar ul li{
+  display: inline-block;
+  color: #000;
+  margin-right: 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.navbar .left_navbar ul li a{
+  color: #000;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 14px;
+}
+
+
+.buttons button{
+  width: 100px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid black;
+  transition: .5s;
+}
+
+.buttons .login{
+  border: none;
+}
+
+.buttons button:hover{
+  background-color: rgb(230, 230, 230);
+}
+
+.menu{
+  display: none;
+}
+
+.features{
+  width: 11%;
+  height: 15vh;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color:#fff;
+  position: absolute;
+  top: 8%;
+  left: 9%;
+  box-shadow: 1px 1px 15px rgb(172, 171, 171);
+  border-radius: 10px;
+}
+
+.company{
+  width: 9%;
+  height: 12vh;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color:#fff;
+  position: absolute;
+  top: 8%;
+  left: 23%;
+  box-shadow: 1px 1px 15px rgb(172, 171, 171);
+  border-radius: 10px;
+  padding-left: 26px;
+}
+
+.features li img{
+  margin: 0 10px;
+}
+
+@media only screen and (max-width:1100px){
+  .navbar .left_navbar{
+    width: 60%;
+  }
+
+  .container .right_home img{
+  width: 80%;
+}
+
+}
+
+@media only screen and (max-width:880px){
+
+  .container .page1{
+    height: 65vh;
+    padding: 0px;
+  }
+
+  .navbar .left_navbar .logo img{
+    width: 100%;
+  }
+
+  .container .page1 .left_home{
+    padding: 15px;
+  }
+
+  .container .left_home .logo_sponsors img{
+    width: 80px;
+  }
+
+}
+
+@media only screen and (max-width:880px){
+
+  .buttons{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  .navbar .left_navbar ul{
+    display: none;
+  }
+
+  .navbar .left_navbar{
+    width: 30%;
+  }
+
+}
+
+@media only screen and (max-width:600px){
+
+  .container .right_home .desktop{
+    display: none;
+    width: 100%;
+  }
+
+  .container .page1{
+    width: 100%;
+    height: 80vh;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+  }
+
+  .container .page1 .left_home{
+    width: 100%;
+    padding: 0;
+    align-items: center;
+  }
+
+  .container .page1 .left_home h1{
+    text-align: center;
+    font-size: 1.8em;
+  }
+
+  .container .page1 .left_home p{
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .container .page1 .right_home{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    padding: 0;
+  }
+
+  .container .page1 .mobile{
+    display: block;
+    width: 100%;
+  }
+
+  .container .page1 .left_home .more{
+    background-color: #000;
+    color: #fff;
+    width: 35%;
+  }
+
+  .container .page1 .left_home .logo_sponsors img{
+    width: 20%;
+  }
+
+}
